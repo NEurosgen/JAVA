@@ -1,10 +1,6 @@
 
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Enter your name");
-        Scanner scan = new Scanner(System.in);
-        String name = scan.next();
-        System.out.println("Hello, " + name);
+        System.out.println("\u0416\u0435\u043D\u044F");
     }
 }
