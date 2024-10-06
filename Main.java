@@ -1,21 +1,10 @@
-class Shape{
-    public void draw(){
-        System.out.println("Draw shape");
-    }
-}
-class Circle extends Shape{
-     @Override
-    public void draw(){
-        System.out.println
-    ("Draw circle");
-    }
-}
+
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Shape shape = new Shape();
-        Shape circle = new Circle();
-        
-        shape.draw();    
-        circle.draw();   
+        System.out.println("Enter your name");
+        Scanner scan = new Scanner(System.in);
+        String name = scan.next();
+        System.out.println("Hello, " + name);
     }
 }
