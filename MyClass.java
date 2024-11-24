@@ -2,7 +2,6 @@ package package1;
 
 public class MyClass {
     private int privateField = 1;
-    int defaultField = 2;  // Пакетная видимость
     protected int protectedField = 3;
     public int publicField = 4;
 
