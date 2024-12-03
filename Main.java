@@ -1,20 +1,20 @@
-class Parent {
-    public final void finalMethod() {
-        System.out.println("This is a final method in Parent.");
+final class FinalClass {
+    public void display() {
+        System.out.println("This is a method in a final class.");
     }
 }
 
-class Child extends Parent {
-    // Попытка переопределить final-метод вызовет ошибку компиляции.
+// Попытка наследоваться от final-класса вызовет ошибку компиляции.
+class SubClass extends FinalClass {
     @Override
-    public void finalMethod() {
-        System.out.println("Attempting to override final method in Child.");
+    public void display() {
+        System.out.println("Attempting to override method from FinalClass.");
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Child child = new Child();
-        child.finalMethod(); // Ошибка компиляции
+        SubClass obj = new SubClass();
+        obj.display();
     }
 }
